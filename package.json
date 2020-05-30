@@ -1,0 +1,34 @@
+{
+  "name": "akplanner-service",
+  "version": "0.0.1",
+  "main": "dist/server.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node -r ts-node/register ./src/server.ts",
+    "debug": "node --inspect -r ts-node/register ./src/server.ts",
+    "start:watch": "nodemon src/server.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint \"src/**/*\"",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.3",
+    "eslint": "^7.0.0",
+    "jest": "^26.0.1",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.0.0",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.2"
+  },
+  "dependencies": {
+    "apollo-server": "^2.13.1",
+    "apollo-server-express": "^2.13.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "graphql-tools": "^5.0.0",
+    "merge-graphql-schemas": "^1.7.8"
+  }
+}
